@@ -1,4 +1,6 @@
-import { EntranceMessage } from './message.js'
+import "@babel/polyfill";
+import { delayedMessage, entranceMessage } from './message.js'
 
 ((name) => console.log(name))('Juanes')
-document.write(EntranceMessage)
+delayedMessage();
+document.write(entranceMessage); 
