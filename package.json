@@ -12,8 +12,9 @@
     "build:multi": "webpack --config ./multiple-entry/webpack.config.js",
     "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
     "build:babel": "webpack --watch --config ./babel-loader-option/webpack.config.js",
-    "build:images": "webpack --watch --config ./url-loader-imagenes/webpack.config.js"
-
+    "build:images": "webpack --watch --config ./url-loader-imagenes/webpack.config.js",
+    "build:font": "webpack --watch --config ./url-loader-font/webpack.config.js",
+    "build:video": "webpack --watch --config ./url-loader-video/webpack.config.js"
   },
   "keywords": [],
   "author": "webSkarte",
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.3",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.1",
