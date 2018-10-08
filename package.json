@@ -14,15 +14,19 @@
     "build:babel": "webpack --watch --config ./babel-loader-option/webpack.config.js",
     "build:images": "webpack --watch --config ./url-loader-imagenes/webpack.config.js",
     "build:font": "webpack --watch --config ./url-loader-font/webpack.config.js",
-    "build:video": "webpack --watch --config ./url-loader-video/webpack.config.js"
+    "build:video": "webpack --watch --config ./file-loader-video/webpack.config.js",
+    "build:json": "webpack --config ./json-loader/webpack.config.js", 
+    "build:react": "webpack --watch --config ./react/webpack.config.js"
   },
   "keywords": [],
   "author": "webSkarte",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.4",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.3",
