@@ -15,28 +15,38 @@
     "build:images": "webpack --watch --config ./url-loader-imagenes/webpack.config.js",
     "build:font": "webpack --watch --config ./url-loader-font/webpack.config.js",
     "build:video": "webpack --watch --config ./file-loader-video/webpack.config.js",
-    "build:json": "webpack --config ./json-loader/webpack.config.js", 
-    "build:react": "webpack --watch --config ./react/webpack.config.js"
+    "build:json": "webpack --config ./json-loader/webpack.config.js",
+    "build:react": "webpack --watch --config ./react/webpack.config.js",
+    "build:sass": "webpack --watch --config ./sass-loader/webpack.config.js",
+    "build:stylus": "webpack --watch --config ./stylus-loader/webpack.config.js"
   },
   "keywords": [],
   "author": "webSkarte",
   "license": "MIT",
   "devDependencies": {
-    "@babel/preset-react": "^7.0.0",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "url-loader": "^1.1.1",
     "webpack": "4.8.1",
     "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0"
+    "@babel/polyfill": "^7.0.0",
+    "nib": "^1.1.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "rupture": "^0.7.1"
   }
 }
