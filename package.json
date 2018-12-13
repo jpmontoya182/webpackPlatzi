@@ -18,7 +18,10 @@
     "build:json": "webpack --config ./json-loader/webpack.config.js",
     "build:react": "webpack --watch --config ./react/webpack.config.js",
     "build:sass": "webpack --watch --config ./sass-loader/webpack.config.js",
-    "build:stylus": "webpack --watch --config ./stylus-loader/webpack.config.js"
+    "build:stylus": "webpack --watch --config ./stylus-loader/webpack.config.js",
+    "build:less": "webpack --progress --watch --config ./less-loader/webpack.config.js",
+    "build:postcss": "webpack --progress --watch --config ./postcss-loader/webpack.config.js",
+    "build:prevent": "webpack --progress --watch --config ./prevent-duplications/webpack.config.js"
   },
   "keywords": [],
   "author": "webSkarte",
@@ -31,8 +34,15 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.4.3",
+    "nib": "^1.1.2",
     "node-sass": "^4.11.0",
+    "postcss": "^7.0.6",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "rupture": "^0.7.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "stylus": "^0.54.5",
@@ -44,9 +54,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "nib": "^1.1.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "rupture": "^0.7.1"
+    "react-dom": "^16.6.3"
   }
 }

@@ -1,0 +1,8 @@
+$borderWth : 2px + 3px;
+$padding : $borderWth * 2;
+
+.Teachers{
+    background: gray;
+    border: $borderWth dashed orange;
+    padding: $padding;
+}
