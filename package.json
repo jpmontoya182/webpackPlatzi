@@ -14,20 +14,26 @@
     "build:babel": "webpack --watch --config ./babel-loader-option/webpack.config.js",
     "build:images": "webpack --watch --config ./url-loader-imagenes/webpack.config.js",
     "build:font": "webpack --watch --config ./url-loader-font/webpack.config.js",
-    "build:video": "webpack --watch --config ./file-loader-video/webpack.config.js",
-    "build:json": "webpack --config ./json-loader/webpack.config.js",
-    "build:react": "webpack --watch --config ./react/webpack.config.js",
-    "build:sass": "webpack --watch --config ./sass-loader/webpack.config.js",
-    "build:stylus": "webpack --watch --config ./stylus-loader/webpack.config.js",
-    "build:less": "webpack --progress --watch --config ./less-loader/webpack.config.js",
-    "build:postcss": "webpack --progress --watch --config ./postcss-loader/webpack.config.js",
-    "build:prevent": "webpack --progress --watch --config ./prevent-duplications/webpack.config.js"
+    "build:video": "webpack --watch --config ./10.file-loader-video/webpack.config.js",
+    "build:json": "webpack --config ./11.json-loader/webpack.config.js",
+    "build:react": "webpack --watch --config ./12.react/webpack.config.js",
+    "build:sass": "webpack --watch --config ./13.sass-loader/webpack.config.js",
+    "build:stylus": "webpack --watch --config ./13.stylus-loader/webpack.config.js",
+    "build:less": "webpack --progress --watch --config ./14.less-loader/webpack.config.js",
+    "build:postcss": "webpack --progress --watch --config ./15.postcss-loader/webpack.config.js",
+    "build:prevent": "webpack --progress --watch --config ./16.prevent-duplications/webpack.config.js",
+    "build:vendor": "webpack --progress --watch --config ./17.vendor/webpack.config.js",
+    "build:dll": "webpack --progress --watch --config ./18.dll/webpack.dll.config.js",
+    "build:dll:src": "webpack --progress --watch --config ./18.dll/webpack.config.js",
+    "build:dynamic": "webpack --progress --watch --config ./19.dynamic-imports/webpack.config.js"
   },
   "keywords": [],
   "author": "webSkarte",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
@@ -54,6 +60,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }

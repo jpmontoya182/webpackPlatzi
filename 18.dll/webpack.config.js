@@ -1,13 +1,10 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require('webpack')
 
 
 module.exports = {
     entry: {
-        vendor :[
-            'react',
-            'react-dom'
-        ],
         home: path.resolve(__dirname, 'src/js/index.js'),
         contact : path.resolve(__dirname, 'src/js/contact.js')
     },
@@ -94,21 +91,12 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',            
         }), 
+        new webpack.DllReferencePlugin({
+            manifest: require('./modules-manifest.json')
+        })
     ],
     resolveLoader: {
         moduleExtensions: ['-loader'],
     },
-    optimization: {
-        splitChunks: {
-          cacheGroups: {
-            commons: {
-                chunks: 'initial',
-                name: 'vendor',
-                test: 'vendor',
-                enforce: true
-            }
-          }
-        }
-    }
 
 }
